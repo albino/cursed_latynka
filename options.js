@@ -14,6 +14,7 @@
 		}
 	});
 
+	// This can fail so it should happen last :^)
 	let gettingMode = browser.storage.sync.get("mode");
 	gettingMode.then(function(obj) {
 		let active = document.getElementById("mode_" + String(obj.mode));
