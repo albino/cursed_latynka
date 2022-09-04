@@ -1,7 +1,7 @@
 {
-	"manifest_version": 3,
+	"manifest_version": 2,
 	"name": "Cursed Latynka",
-	"version": "2",
+	"version": "3",
 	"description": "sorry",
 
 	"content_scripts": [
