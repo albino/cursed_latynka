@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "Cursed Latynka",
+	"version": "2",
+	"description": "sorry",
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["cursed.js"]
+		}
+	],
+
+	"icons": {
+		"100": "prapor.png"
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"100": "prapor.png"
+		},
+		"default_popup": "options.html",
+		"browser_style": true
+	},
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "cursed_latynka@lgsb2.user.srcf.net",
+			"strict_min_version": "57.0a1"
+		}
+	},
+
+	"permissions": ["storage"]
+}
