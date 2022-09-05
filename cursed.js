@@ -168,7 +168,7 @@ function scanDocument(doc) {
 
 		for (const [k, l] of Object.entries(dicts[mode])) {
 			// Only run the function if the node contains some eligible chars
-			if (node.textContent.includes(k)) {
+			if (node.textContent.includes(k) || node.textContent.includes(k.toUpperCase()) {
 				let cpos = 0;
 				const isEditable = node.parentNode.isContentEditable;
 
@@ -194,6 +194,7 @@ function setMode(newMode) {
 	if (mode === 0) {
 		if (interval !== null) {
 			window.clearInterval(interval);
+			interval = null;
 		}
 		return;
 	}
